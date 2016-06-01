@@ -1,0 +1,18 @@
+<h3>Daily Pay</h3>
+<a href="https://www.trydailypay.com/" target="_blank">Daily Pay</a>
+
+<div class="row">
+  <div>
+  <h3>Daily Pay is Built With:</h3>
+    <ul>
+    <% @built_with.each do |key, value| %>
+        <li><%= value[0] %>:: <%= value[1] %></li>
+    <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+<h3>Daily Pay Charges Its Drivers Based on Earnings:</h3>
+  <%= @pricing %>
+</div>
